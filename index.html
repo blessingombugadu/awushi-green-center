@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>Awushi Green Center</title>
 
@@ -14,13 +15,13 @@ background:#f4f4f4;
 header{
 background:#2e7d32;
 color:white;
-padding:20px;
+padding:25px;
 text-align:center;
 }
 
 nav{
 background:#1b5e20;
-padding:10px;
+padding:12px;
 text-align:center;
 }
 
@@ -37,8 +38,8 @@ padding:40px;
 
 .products{
 display:flex;
-gap:20px;
 flex-wrap:wrap;
+gap:20px;
 }
 
 .card{
@@ -46,7 +47,7 @@ background:white;
 padding:15px;
 border-radius:8px;
 width:250px;
-box-shadow:0 2px 5px rgba(0,0,0,0.1);
+box-shadow:0 3px 6px rgba(0,0,0,0.1);
 }
 
 .card img{
@@ -54,21 +55,34 @@ width:100%;
 border-radius:5px;
 }
 
-footer{
-background:#1b5e20;
-color:white;
-text-align:center;
-padding:20px;
-margin-top:40px;
-}
-
 button{
 background:#2e7d32;
 color:white;
 border:none;
-padding:10px 15px;
-border-radius:5px;
+padding:10px 16px;
+border-radius:6px;
 cursor:pointer;
+}
+
+button:hover{
+background:#1b5e20;
+}
+
+footer{
+background:#1b5e20;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:40px;
+}
+
+.social{
+margin-top:15px;
+}
+
+.social a{
+margin:8px;
+text-decoration:none;
 }
 
 </style>
@@ -78,8 +92,22 @@ cursor:pointer;
 <body>
 
 <header>
+
 <h1>Awushi Green Center</h1>
 <p>Handmade Bags • Ankara Earrings • Craft Training</p>
+
+<div class="social">
+
+<a href="https://www.facebook.com/profile.php?id=100063936015178&mibextid=ZbWKwL">
+<button>Facebook</button>
+</a>
+
+<a href="https://wa.me/2349053769574">
+<button>Chat on WhatsApp</button>
+</a>
+
+</div>
+
 </header>
 
 <nav>
@@ -100,18 +128,19 @@ cursor:pointer;
 <div class="card">
 <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7">
 <h3>Classic Tote Bag</h3>
-<p>Handcrafted durable tote bag.</p>
+<p>Durable handmade tote bag.</p>
 </div>
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6">
 <h3>Fashion Shoulder Bag</h3>
-<p>Stylish everyday shoulder bag.</p>
+<p>Stylish shoulder bag.</p>
 </div>
 
 </div>
 
 </section>
+
 
 <section id="earrings">
 
@@ -122,40 +151,103 @@ cursor:pointer;
 <div class="card">
 <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a3b2f">
 <h3>Colorful Ankara Earrings</h3>
-<p>Lightweight handmade earrings.</p>
+<p>Handmade African fashion accessories.</p>
 </div>
 
 </div>
 
 </section>
+
 
 <section id="training">
 
-<h2>Craft Training</h2>
+<h2>Bag Making Training</h2>
 
-<p>We train students on bag making and Ankara accessories.</p>
+<p>
 
-<button>Register For Training</button>
+Awushi Green Center provides training on:
+
+</p>
+
+<ul>
+
+<li>Handmade bag production</li>
+<li>Ankara accessories crafting</li>
+<li>Creative craft entrepreneurship</li>
+
+</ul>
+
+<a href="mailto:awushibags@gmail.com">
+
+<button>Register for Training</button>
+
+</a>
 
 </section>
+
 
 <section id="support">
 
 <h2>Customer Support</h2>
 
-<p>If you need help with your order or want to make enquiries, contact our support team.</p>
+<p>
 
-<a href="https://awushibags.freshdesk.com">
-<button>Contact Support</button>
-</a>
+If you have an enquiry, delivery issue, refund request, or product question,
+please submit a ticket using the form below.
+
+</p>
+
+<!-- Freshdesk Embedded Ticket Form -->
+
+<script type="text/javascript" src="https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.js"></script>
+
+<style type="text/css" media="screen, projection">
+@import url(https://s3.amazonaws.com/assets.freshdesk.com/widget/freshwidget.css);
+</style>
+
+<iframe
+title="Feedback Form"
+class="freshwidget-embedded-form"
+src="https://awushibags.freshdesk.com/widgets/feedback_widget/new?&widgetType=embedded"
+scrolling="no"
+height="500px"
+width="100%"
+frameborder="0">
+</iframe>
+
+<p style="margin-top:20px">
+
+Email support: awushibags@gmail.com
+
+</p>
 
 </section>
+
 
 <footer>
 
 <p>© 2026 Awushi Green Center</p>
 
+<p>Customer support powered by Freshdesk</p>
+
 </footer>
+
+
+<!-- Freshdesk Web Chat Widget -->
+
+<script>
+function initFreshdesk() {
+ window.fdWidget.init({
+ token: "01KK5XZGKNNAX2W6H562WA4YA9" ,
+ host: "omzy100.freshdesk.com",
+ widgetId: "01KK5XZK7VGV89K5MH6X0XABNP",
+ });
+}
+
+function initialize(i,t){var e;i.getElementById(t)?initFreshdesk():((e=i.createElement("script")).id=t,e.async=!0,e.src="https://omzy100.freshdesk.com/webchat/js/widget.js",e.onload=initFreshdesk,i.head.appendChild(e))}
+function initiateCall(){initialize(document,"Freshdesk-js-sdk")}
+window.addEventListener?window.addEventListener("load",initiateCall,!1):window.attachEvent("load",initiateCall,!1);
+</script>
 
 </body>
 
