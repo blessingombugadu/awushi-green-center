@@ -37,8 +37,26 @@ nav a:hover{
 color:#C9A227;
 }
 
+.hero{
+background:#111;
+color:white;
+padding:80px 20px;
+text-align:center;
+}
+
+.hero h1{
+color:#C9A227;
+font-size:42px;
+}
+
+.container{
+max-width:1000px;
+margin:auto;
+text-align:center;
+}
+
 section{
-padding:40px;
+padding:60px 20px;
 }
 
 h2{
@@ -52,14 +70,17 @@ padding-bottom:5px;
 display:flex;
 flex-wrap:wrap;
 gap:20px;
+justify-content:center;
+margin-top:30px;
 }
 
 .card{
 background:white;
 padding:15px;
 border-radius:8px;
-width:250px;
+width:260px;
 box-shadow:0 4px 10px rgba(0,0,0,0.15);
+text-align:center;
 }
 
 .card img{
@@ -75,6 +96,7 @@ padding:10px 16px;
 border-radius:6px;
 cursor:pointer;
 font-weight:bold;
+margin-top:10px;
 }
 
 button:hover{
@@ -100,6 +122,13 @@ transition:0.3s;
 transform:scale(1.2);
 }
 
+ul{
+list-style:none;
+padding:0;
+font-size:18px;
+line-height:1.7;
+}
+
 </style>
 
 </head>
@@ -113,6 +142,7 @@ transform:scale(1.2);
 
 </header>
 
+
 <nav>
 
 <a href="#bags">Bags</a>
@@ -123,7 +153,22 @@ transform:scale(1.2);
 </nav>
 
 
+<section class="hero">
+
+<h1>Turning Waste Into Beauty</h1>
+
+<p>
+Empowering creativity through handmade crafts and sustainable training.
+</p>
+
+<button onclick="openCalendly()">Book Training Session</button>
+
+</section>
+
+
 <section id="bags">
+
+<div class="container">
 
 <h2>Our Handmade Bags</h2>
 
@@ -132,13 +177,38 @@ transform:scale(1.2);
 <div class="card">
 <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7">
 <h3>Classic Tote Bag</h3>
-<p>Durable handmade tote bag.</p>
+<p>Durable handmade fashion tote.</p>
+
+<p><b>Price:</b> ₦18,000</p>
+
+<a href="https://wa.me/2349053769574?text=Hello%20I%20want%20to%20order%20the%20Classic%20Tote%20Bag">
+<button>Order via WhatsApp</button>
+</a>
+
+<a href="https://awushibags.freshdesk.com/support/tickets/new" target="_blank">
+<button>Order via Support Ticket</button>
+</a>
+
 </div>
+
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6">
 <h3>Fashion Shoulder Bag</h3>
-<p>Stylish shoulder bag.</p>
+<p>Stylish everyday shoulder bag.</p>
+
+<p><b>Price:</b> ₦22,000</p>
+
+<a href="https://wa.me/2349053769574?text=Hello%20I%20want%20to%20order%20the%20Fashion%20Shoulder%20Bag">
+<button>Order via WhatsApp</button>
+</a>
+
+<a href="https://awushibags.freshdesk.com/support/tickets/new" target="_blank">
+<button>Order via Support Ticket</button>
+</a>
+
+</div>
+
 </div>
 
 </div>
@@ -148,14 +218,30 @@ transform:scale(1.2);
 
 <section id="earrings">
 
+<div class="container">
+
 <h2>Ankara Earrings</h2>
+
+<p>
+Our Ankara earrings are produced using leftover Ankara fabric from bag production.
+Instead of allowing textile waste to pollute the environment, we apply the principles
+of the green economy: <b>Reduce, Reuse, Recycle, and Repurpose.</b>
+</p>
+
+<p>
+By transforming fabric waste into beautiful fashion accessories,
+Awushi Green Center promotes creativity while helping to keep our
+environment clean and sustainable.
+</p>
 
 <div class="products">
 
 <div class="card">
 <img src="https://images.unsplash.com/photo-1617038260897-41a1f14a3b2f">
-<h3>Colorful Ankara Earrings</h3>
-<p>Handmade African fashion accessories.</p>
+<h3>Recycled Ankara Earrings</h3>
+<p>Eco-friendly handmade fashion accessories.</p>
+</div>
+
 </div>
 
 </div>
@@ -165,36 +251,48 @@ transform:scale(1.2);
 
 <section id="training">
 
-<h2>Bag Making Training</h2>
+<div class="container">
+
+<h2>Training Sessions</h2>
 
 <p>
-Awushi Green Center provides hands-on training on:
+Awushi Green Center provides practical training that empowers individuals
+to build creative craft skills and sustainable income opportunities.
 </p>
 
 <ul>
-<li>Handmade bag production</li>
-<li>Ankara accessories crafting</li>
-<li>Creative craft entrepreneurship</li>
+
+<li>👜 Handmade Bag Production</li>
+<li>🧵 Throw Pillow Crafting</li>
+<li>🌿 Ankara Earrings from Recycled Fabric</li>
+
 </ul>
 
-<a href="mailto:awushibags@gmail.com">
-<button>Register for Training</button>
-</a>
+<button onclick="openCalendly()">Book Training Session</button>
+
+</div>
 
 </section>
 
 
 <section id="support">
 
+<div class="container">
+
 <h2>Customer Support</h2>
 
 <p>
-Need help with an order, enquiry, delivery issue or refund?
+Need help with an order, delivery issue, enquiry, or refund?
+Our support system allows customers to submit tickets or chat with support.
 </p>
 
 <a href="https://awushibags.freshdesk.com/support/tickets/new" target="_blank">
+
 <button>Submit Support Ticket</button>
+
 </a>
+
+</div>
 
 </section>
 
@@ -222,7 +320,16 @@ Need help with an order, enquiry, delivery issue or refund?
 </footer>
 
 
+<script src="https://assets.calendly.com/assets/external/widget.js"></script>
+
 <script>
+
+function openCalendly(){
+Calendly.initPopupWidget({
+url: 'https://calendly.com/awushibags/new-meeting'
+});
+return false;
+}
 
 function initFreshdesk() {
   window.fdWidget.init({
